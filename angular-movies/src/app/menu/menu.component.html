@@ -18,22 +18,38 @@
   <div class="nav-container" [class.mobile-nav-active]="isMobileMenuOpen">
     <div class="nav-links">
       <!-- Main Navigation -->
-      <a mat-button routerLink="movies/filter" class="nav-button">
+      <a
+        mat-button
+        (click)="navigateAndCloseMenu('movies/filter')"
+        class="nav-button"
+      >
         <mat-icon>search</mat-icon>
         <span>Search movies</span>
       </a>
 
-      <a mat-button routerLink="movies/upcoming" class="nav-button">
+      <a
+        mat-button
+        (click)="navigateAndCloseMenu('movies/upcoming')"
+        class="nav-button"
+      >
         <mat-icon>upcoming</mat-icon>
         <span>Upcoming</span>
       </a>
 
-      <a mat-button routerLink="movies/in-theaters" class="nav-button">
+      <a
+        mat-button
+        (click)="navigateAndCloseMenu('movies/in-theaters')"
+        class="nav-button"
+      >
         <mat-icon>movie</mat-icon>
         <span>In Theaters</span>
       </a>
 
-      <a mat-button routerLink="movies/popular" class="nav-button">
+      <a
+        mat-button
+        (click)="navigateAndCloseMenu('movies/popular')"
+        class="nav-button"
+      >
         <mat-icon>trending_up</mat-icon>
         <span>Popular</span>
       </a>
@@ -52,23 +68,23 @@
               <mat-icon class="dropdown-icon">arrow_drop_down</mat-icon>
             </button>
             <mat-menu #adminMenu="matMenu" class="admin-menu">
-              <a mat-menu-item routerLink="genres">
+              <a mat-menu-item (click)="navigateAndCloseMenu('genres')">
                 <mat-icon>category</mat-icon>
                 <span>Genres</span>
               </a>
-              <a mat-menu-item routerLink="actors">
+              <a mat-menu-item (click)="navigateAndCloseMenu('actors')">
                 <mat-icon>people</mat-icon>
                 <span>Actors</span>
               </a>
-              <a mat-menu-item routerLink="movietheaters">
+              <a mat-menu-item (click)="navigateAndCloseMenu('movietheaters')">
                 <mat-icon>theater_comedy</mat-icon>
                 <span>Movie Theaters</span>
               </a>
-              <a mat-menu-item routerLink="movies/create">
+              <a mat-menu-item (click)="navigateAndCloseMenu('movies/create')">
                 <mat-icon>add_circle</mat-icon>
                 <span>Create Movie</span>
               </a>
-              <a mat-menu-item routerLink="users">
+              <a mat-menu-item (click)="navigateAndCloseMenu('users')">
                 <mat-icon>group</mat-icon>
                 <span>Users</span>
               </a>

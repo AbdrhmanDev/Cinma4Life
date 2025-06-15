@@ -209,4 +209,11 @@ export class MenuComponent implements OnInit {
     this.notificationCount = this.notifications.filter((n) => !n.read).length;
     this.cdr.detectChanges();
   }
+
+  navigateAndCloseMenu(route: string): void {
+    this.router.navigate([route]);
+    if (this.isMobileView) {
+      this.isMobileMenuOpen = false;
+    }
+  }
 }
