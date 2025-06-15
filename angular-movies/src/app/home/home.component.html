@@ -1,0 +1,168 @@
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to Movie Center</h1>
+    <p class="hero-subtitle">Discover the magic of cinema</p>
+    <div class="hero-cta">
+      <button class="btn-primary">Explore Movies</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+  </div>
+</div>
+
+<!-- Stats Section -->
+<div class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-number">1000+</span>
+        <span class="stat-label">Movies</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Theaters</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100K+</span>
+        <span class="stat-label">Happy Users</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">4.8</span>
+        <span class="stat-label">User Rating</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Movies Sections -->
+<div class="container">
+  <!-- In Theaters Section -->
+  <section class="movies-section">
+    <div class="section-header">
+      <h2>In Theaters</h2>
+      <div class="section-line"></div>
+    </div>
+    <app-movies-list
+      (onDelete)="onDelete()"
+      [movies]="moviesInTheaters"
+    ></app-movies-list>
+  </section>
+
+  <!-- Future Releases Section -->
+  <section class="movies-section">
+    <div class="section-header">
+      <h2>Future Releases</h2>
+      <div class="section-line"></div>
+    </div>
+    <app-movies-list
+      (onDelete)="onDelete()"
+      [movies]="moviesFutureReleases"
+    ></app-movies-list>
+  </section>
+</div>
+
+<!-- Features Section -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>Why Choose Movie Center</h2>
+      <div class="section-line center"></div>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="feature-icon fas fa-film"></i>
+        <h3>Latest Releases</h3>
+        <p>Stay updated with the newest movies hitting theaters near you.</p>
+      </div>
+      <div class="feature-card">
+        <i class="feature-icon fas fa-ticket-alt"></i>
+        <h3>Easy Booking</h3>
+        <p>Book your tickets hassle-free with our simple booking system.</p>
+      </div>
+      <div class="feature-card">
+        <i class="feature-icon fas fa-star"></i>
+        <h3>User Reviews</h3>
+        <p>Read authentic reviews from our community of movie enthusiasts.</p>
+      </div>
+      <div class="feature-card">
+        <i class="feature-icon fas fa-mobile-alt"></i>
+        <h3>Mobile Friendly</h3>
+        <p>Access our platform anywhere, anytime from any device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-content">
+      <h2>Stay Updated</h2>
+      <p>
+        Subscribe to our newsletter for the latest movie updates and exclusive
+        offers
+      </p>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          class="newsletter-input"
+        />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>Movie Center</h3>
+        <p>
+          Your ultimate destination for movies, reviews, and entertainment news.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Theaters</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Comedy</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Horror</a></li>
+          <li><a href="#">Family</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul class="contact-info">
+          <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+          <li><i class="fas fa-envelope"></i> info&#64;moviecenter.com</li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i> 123 Movie Street, CA 90210
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Movie Center. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

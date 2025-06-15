@@ -1,0 +1,290 @@
+/* Main Toolbar */
+.main-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0 16px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.logo-link:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.logo-link mat-icon {
+  margin-right: 8px;
+  font-size: 24px;
+  color: #bb86fc;
+}
+
+.logo-text {
+  display: inline-block;
+  background: linear-gradient(45deg, #bb86fc, #c397fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* Navigation */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 36px;
+  padding: 0 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.nav-button mat-icon {
+  margin-right: 4px;
+  color: #bb86fc;
+}
+
+/* Section Styling */
+.section-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 16px 0;
+}
+
+.section-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  display: block;
+}
+
+/* Admin Section */
+.admin-section {
+  margin: 8px 0;
+}
+
+.admin-button {
+  color: #03dac6;
+}
+
+.admin-button mat-icon {
+  color: #03dac6;
+}
+
+/* User Section */
+.user-section-nav {
+  margin: 8px 0;
+}
+
+.user-button {
+  color: #bb86fc;
+}
+
+.user-button mat-icon {
+  color: #bb86fc;
+}
+
+/* User Menu */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-menu-button {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.user-menu-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.user-dropdown-menu {
+  min-width: 200px;
+}
+
+.user-menu-header {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #2d2d2d;
+}
+
+.user-menu-header mat-icon {
+  color: #bb86fc;
+}
+
+.user-menu-header span {
+  color: white;
+  font-weight: 500;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.login-button,
+.register-button {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.login-button {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.login-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.register-button {
+  background: #bb86fc;
+  color: #1a1a1a;
+}
+
+.register-button:hover {
+  background: #c397fc;
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  margin-right: 8px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 4px;
+  }
+
+  .nav-button {
+    padding: 0 12px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1a1a1a;
+    flex-direction: column;
+    padding: 16px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .nav-container.mobile-nav-active {
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .nav-button {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0 16px;
+    height: 48px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .login-button,
+  .register-button {
+    width: 100%;
+    justify-content: center;
+    height: 48px;
+  }
+}
+
+/* Dark Theme Support */
+:host-context(.dark-theme) {
+  .nav-container {
+    background: #1a1a1a;
+  }
+
+  .user-menu-header {
+    background: #2d2d2d;
+  }
+
+  .user-menu-header mat-icon,
+  .user-menu-header span {
+    color: white;
+  }
+}
+
+/* Utility */
+.space {
+  flex: 1 1 auto;
+}
