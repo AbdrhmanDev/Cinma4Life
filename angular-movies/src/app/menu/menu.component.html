@@ -41,79 +41,38 @@
       <!-- Admin Section -->
       <app-authorize-view [role]="'admin'">
         <ng-container authorized>
-          <div class="admin-section">
-            <div class="section-divider"></div>
-            <span class="section-title">Admin Panel</span>
-
-            <a mat-button routerLink="genres" class="nav-button admin-button">
-              <mat-icon>category</mat-icon>
-              <span>Genres</span>
-            </a>
-
-            <a mat-button routerLink="actors" class="nav-button admin-button">
-              <mat-icon>people</mat-icon>
-              <span>Actors</span>
-            </a>
-
-            <a
+          <div class="admin-dropdown">
+            <button
               mat-button
-              routerLink="movietheaters"
-              class="nav-button admin-button"
+              class="admin-button"
+              [matMenuTriggerFor]="adminMenu"
             >
-              <mat-icon>theater_comedy</mat-icon>
-              <span>Movie Theaters</span>
-            </a>
-
-            <a
-              mat-button
-              routerLink="movies/create"
-              class="nav-button admin-button"
-            >
-              <mat-icon>add_circle</mat-icon>
-              <span>Create Movie</span>
-            </a>
-
-            <a mat-button routerLink="users" class="nav-button admin-button">
-              <mat-icon>group</mat-icon>
-              <span>Users</span>
-            </a>
-          </div>
-        </ng-container>
-      </app-authorize-view>
-
-      <!-- User Section -->
-      <app-authorize-view>
-        <ng-container authorized>
-          <div class="user-section-nav">
-            <div class="section-divider"></div>
-            <span class="section-title">My Account</span>
-
-            <a
-              mat-button
-              routerLink="user/favorites"
-              class="nav-button user-button"
-            >
-              <mat-icon>favorite</mat-icon>
-              <span>Favorites</span>
-            </a>
-
-            <a
-              mat-button
-              routerLink="user/watchlist"
-              class="nav-button user-button"
-            >
-              <mat-icon>playlist_play</mat-icon>
-              <span>Watchlist</span>
-            </a>
-
-            <a
-              mat-button
-              routerLink="user/ratings"
-              class="nav-button user-button"
-            >
-              <mat-icon>star</mat-icon>
-              <span>My Ratings</span>
-            </a>
+              <mat-icon>admin_panel_settings</mat-icon>
+              <span>Admin Panel</span>
+              <mat-icon class="dropdown-icon">arrow_drop_down</mat-icon>
+            </button>
+            <mat-menu #adminMenu="matMenu" class="admin-menu">
+              <a mat-menu-item routerLink="genres">
+                <mat-icon>category</mat-icon>
+                <span>Genres</span>
+              </a>
+              <a mat-menu-item routerLink="actors">
+                <mat-icon>people</mat-icon>
+                <span>Actors</span>
+              </a>
+              <a mat-menu-item routerLink="movietheaters">
+                <mat-icon>theater_comedy</mat-icon>
+                <span>Movie Theaters</span>
+              </a>
+              <a mat-menu-item routerLink="movies/create">
+                <mat-icon>add_circle</mat-icon>
+                <span>Create Movie</span>
+              </a>
+              <a mat-menu-item routerLink="users">
+                <mat-icon>group</mat-icon>
+                <span>Users</span>
+              </a>
+            </mat-menu>
           </div>
         </ng-container>
       </app-authorize-view>
@@ -122,31 +81,50 @@
 
   <div class="space"></div>
 
-  <!-- User Actions -->
+  <!-- User Section - Right side -->
   <app-authorize-view>
     <ng-container authorized>
-      <div class="user-section">
-        <button
-          mat-icon-button
-          [matMenuTriggerFor]="userMenu"
-          class="user-menu-button"
-        >
-          <mat-icon>account_circle</mat-icon>
+      <div class="user-dropdown">
+        <button mat-button class="user-button" [matMenuTriggerFor]="userMenu">
+          <img
+            [src]="
+              'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png'
+            "
+            alt="User Avatar"
+            class="user-avatar"
+          />
+          <span class="user-name">User</span>
+          <mat-icon class="dropdown-icon">arrow_drop_down</mat-icon>
         </button>
-        <mat-menu #userMenu="matMenu" class="user-dropdown-menu">
+        <mat-menu #userMenu="matMenu" class="user-menu">
           <div class="user-menu-header">
-            <mat-icon>account_circle</mat-icon>
-            <span>{{ securityService.getFieldFromJWT("email") }}</span>
+            <img
+              [src]="
+                'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png'
+              "
+              alt="User Avatar"
+              class="user-avatar-large"
+            />
+            <div class="user-info">
+              <span class="user-name">User</span>
+              <span class="member-since"
+                >Member since {{ memberSince | date }}</span
+              >
+            </div>
           </div>
           <mat-divider></mat-divider>
-          <button mat-menu-item routerLink="user/profile">
+          <a mat-menu-item routerLink="/profile">
             <mat-icon>person</mat-icon>
             <span>Profile</span>
-          </button>
-          <button mat-menu-item routerLink="user/settings">
-            <mat-icon>settings</mat-icon>
-            <span>Settings</span>
-          </button>
+          </a>
+          <a mat-menu-item routerLink="/favorites">
+            <mat-icon>favorite</mat-icon>
+            <span>Favorites</span>
+          </a>
+          <a mat-menu-item routerLink="/watchlist">
+            <mat-icon>playlist_play</mat-icon>
+            <span>Watchlist</span>
+          </a>
           <mat-divider></mat-divider>
           <button mat-menu-item (click)="securityService.logout()">
             <mat-icon>exit_to_app</mat-icon>
@@ -155,13 +133,13 @@
         </mat-menu>
       </div>
     </ng-container>
-    <ng-container notAuthorized>
+    <ng-container unauthorized>
       <div class="auth-buttons">
-        <a mat-button routerLink="login" class="login-button">
+        <a mat-button routerLink="/login" class="login-button">
           <mat-icon>login</mat-icon>
           <span>Login</span>
         </a>
-        <a mat-button routerLink="register" class="register-button">
+        <a mat-button routerLink="/register" class="register-button">
           <mat-icon>person_add</mat-icon>
           <span>Register</span>
         </a>

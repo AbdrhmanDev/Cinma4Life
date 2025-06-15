@@ -156,8 +156,7 @@ export class MenuComponent implements OnInit {
       // Load user data from API
       // This is a mock implementation
       const userData = {
-        avatar:
-          'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png',
+        avatar: 'assets/default-avatar.png',
         memberSince: new Date('2025-01-01'),
       };
 
