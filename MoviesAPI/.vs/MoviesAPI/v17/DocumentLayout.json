@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\moviesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\moviesapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\helpers\\cloudinarystorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\helpers\\cloudinarystorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\helpers\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\helpers\\ifilestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\helpers\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\helpers\\azurestorageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|h:\\movie-center-main\\deployments module 8 -\\moviesapi\\moviesapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90AA1B59-1332-4306-8CAE-90FA07BA832A}|MoviesAPI\\MoviesAPI.csproj|solutionrelative:moviesapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFileStorageService.cs",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\IFileStorageService.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Helpers\\IFileStorageService.cs",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\IFileStorageService.cs",
+              "RelativeToolTip": "MoviesAPI\\Helpers\\IFileStorageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T21:59:49.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Startup.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Startup.cs",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Startup.cs",
+              "RelativeToolTip": "MoviesAPI\\Startup.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAjwEUAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T21:58:18.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoviesAPI.csproj",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+              "RelativeDocumentMoniker": "MoviesAPI\\MoviesAPI.csproj",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\MoviesAPI.csproj",
+              "RelativeToolTip": "MoviesAPI\\MoviesAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-14T21:57:19.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CloudinaryStorageService.cs",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\CloudinaryStorageService.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Helpers\\CloudinaryStorageService.cs",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\CloudinaryStorageService.cs",
+              "RelativeToolTip": "MoviesAPI\\Helpers\\CloudinaryStorageService.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T21:46:09.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MoviesAPI\\appsettings.json",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\appsettings.json",
+              "RelativeToolTip": "MoviesAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-14T21:56:29.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AzureStorageService.cs",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\AzureStorageService.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Helpers\\AzureStorageService.cs",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Helpers\\AzureStorageService.cs",
+              "RelativeToolTip": "MoviesAPI\\Helpers\\AzureStorageService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T21:38:24.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "MoviesAPI\\Controllers\\AccountsController.cs",
+              "ToolTip": "H:\\Movie-Center-main\\Deployments Module 8 -\\MoviesAPI\\MoviesAPI\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "MoviesAPI\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-14T21:19:49.223Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
